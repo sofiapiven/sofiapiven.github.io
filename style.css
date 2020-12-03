@@ -1,0 +1,252 @@
+.page-container {
+    width: 580px; /* 768px is iPad */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    left: 50%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.outer-container {
+    width: 800px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-sec {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+.titles {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0.05em;
+}
+
+.titles p {
+    color: lightslategray;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.titles h1{
+    font-weight: 700;
+    color: rgb(32,32,32);
+}
+
+#img-home {
+    border-radius: 80%;
+    width: 140px;
+    border: 3px dashed cornflowerblue;
+    box-sizing: border-box;
+    transition: all 0.1s linear;
+    transition-delay: 0.05s;
+}
+
+#img-home:hover {
+    border: 1px dashed cornflowerblue;
+}
+
+img {
+    width: 150px;
+    border: 1px dashed cornflowerblue;
+    border-radius: 5%;
+}
+
+.social-media {
+    width: 100%;
+    font-size: 0.5rem;
+    margin-top: 30px;
+}
+
+.social-media ul {padding:0}
+.social-media ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.social-media ul a {
+    color: cornflowerblue;
+}
+
+.social-media ul i:hover {
+    transform: scale(1.2);
+    transition: 0.1s linear;
+}
+
+.homenav {
+    width: 110px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.homenav ul {padding:0}
+.homenav ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.homenav ul a {
+    color: lightslategray;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.homenav ul a:hover {
+    color: cornflowerblue;
+    transition-delay: 0.03s;
+}
+
+.gennav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.gennav ul a {
+    color: lightslategray;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.gennav ul a:hover{
+    color: cornflowerblue;
+    transition-delay: 0.03s;
+}
+
+.gentext {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    text-align: left;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+/* bars */
+
+.footer-bar {
+    width: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(151, 171, 190);
+    font-size: 10px;
+}
+
+.project-bar {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid #ededed;
+    font-size: 10px;
+}
+
+
+/* footer styles */
+
+.footer-para {
+    font-size: 12px;
+}
+
+footer ul {padding:0}
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+
+footer ul a {
+    color: cornflowerblue
+}
+
+#footer-index ul {padding:0}
+#footer-index ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+#footer-index ul a {
+    color: lightslategray;
+    opacity: 50%;
+}
+
+/* misc styles */
+
+.highlight {
+    color: cornflowerblue;
+}
+
+/* read more buttons, citation, project styling*/
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+    content: "Show more";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: "Show less";
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+}
+
+.hanging {
+    padding-left: 22px ;
+    text-indent: -40px ;
+    text-align: justify;
+}
+
+.hanging a {
+    color: rgb(32,32,32);
+    opacity: 70%;
+    transition: 0.2s ease;
+}
+
+.hanging a:hover {
+    opacity: 100%
+}
+
+
+
