@@ -26,8 +26,6 @@
 
 .titles {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
     letter-spacing: 0.05em;
 }
 
@@ -36,31 +34,68 @@
     font-size: 20px;
     font-weight: 300;
     margin-top: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .titles h1{
-    font-weight: 700;
+    font-weight: 800;
     color: rgb(32,32,32);
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
 }
 
 #img-home {
-    border-radius: 80%;
-    width: 140px;
-    border: 3px dashed cornflowerblue;
-    box-sizing: border-box;
-    transition: all 0.1s linear;
-    transition-delay: 0.05s;
+    width: 80%;
 }
 
-#img-home:hover {
-    border: 1px dashed cornflowerblue;
+
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack__item--bottom {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    background-color: black;
+    margin-top: 10px;
+
+}
+
+.image-stack__item--bottom img {
+    opacity: 0.8;
+
+}
+
+.image-stack__item--top3 {
+    grid-row: 1;
+    grid-column: 3 / span 8;
+    padding: 17%;
+    margin-top: 5px;
+    z-index: 3;
+}
+
+.image-stack__item--top3 img {
+    border: 3px solid white;
 }
 
 img {
-    width: 150px;
-    border: 1px dashed cornflowerblue;
-    border-radius: 5%;
+    width: 100%;
+    display: block;
 }
+
+#about-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*img {
+    width: 40%;
+    border-radius: 5%;
+}*/
 
 .social-media {
     width: 100%;
@@ -77,7 +112,7 @@ img {
 }
 
 .social-media ul a {
-    color: cornflowerblue;
+    color: salmon;
 }
 
 .social-media ul i:hover {
@@ -86,17 +121,17 @@ img {
 }
 
 .homenav {
-    width: 110px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    display: inline-block;
     margin-top: 10px;
 }
 
 .homenav ul {padding:0}
 .homenav ul li {
     list-style: none;
-    text-align: left;
+    display: inline-block;
+    padding: 10px;
 }
 
 .homenav ul a {
@@ -107,13 +142,14 @@ img {
 }
 
 .homenav ul a:hover {
-    color: cornflowerblue;
+    color: salmon;
     transition-delay: 0.03s;
 }
 
 .gennav ul li {
     list-style: none;
     display: inline-block;
+    padding: 10px;
 }
 
 .gennav ul a {
@@ -124,7 +160,7 @@ img {
 }
 
 .gennav ul a:hover{
-    color: cornflowerblue;
+    color: salmon;
     transition-delay: 0.03s;
 }
 
@@ -135,6 +171,31 @@ img {
     text-align: left;
     letter-spacing: 0.05em;
     line-height: 1.5em;
+}
+
+.botnav {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.botnav ul {padding:0}
+.botnav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.botnav ul a {
+    color: lightslategray;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.botnav ul a:hover {
+    color: salmon;
+    transition-delay: 0.03s;
 }
 
 /* bars */
@@ -172,7 +233,7 @@ footer ul li {
 }
 
 footer ul a {
-    color: cornflowerblue
+    color: salmon;
 }
 
 #footer-index ul {padding:0}
@@ -191,7 +252,7 @@ footer ul a {
 /* misc styles */
 
 .highlight {
-    color: cornflowerblue;
+    color: salmon;
 }
 
 /* read more buttons, citation, project styling*/

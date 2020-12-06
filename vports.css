@@ -1,7 +1,16 @@
 
-@media screen and (max-width: 799px) {
+@media screen and (min-width:800px) {
+    .botnav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:799px) {
     .outer-container {
         width: 100%;
+    }
+    .botnav {
+        display: none;
     }
 }
 
@@ -16,6 +25,9 @@
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .botnav {
+        display: inline-block;
     }
 
 }
@@ -33,6 +45,9 @@
     }
     .titles p {
         font-size: 17px;
+    }
+    .botnav {
+        display: inline-block;
     }
 
 }
