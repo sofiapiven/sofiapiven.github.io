@@ -22,18 +22,53 @@
 
     <div class="outer-container">
         <header>
-    
-            <nav>
-                <div class="gennav animate delay-three fadeInUp">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                    </ul>
-            </div>
-    
-            </nav>
+                  </ul>
+                </div>
+                            
+            
+            
+            
+           
+                            <div class="gennav animate delay-three fadeInUp"> 
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                            </ul>
+                    
+                        
+                        </div> 
+                    </nav> 
     
         </header>
 
@@ -45,17 +80,17 @@
     
             <div class="about-sec animate delay-two fadeIn">
 
-                <input type="checkbox" class="read-more-state" id="post-1"/>
+                
 
                 <p class="gentext hanging"><a href="#"><span class="highlight"><b>Piven, S. D.</b></span>, Fischer, R., Shaver, J. H., Mogan, R., Karl, J., Kesberg, R., … 
                     Bulbulia, J. (in press). Kiwi Diwali: A Longitudinal Investigation of Perceived Social Connection 
                     Following a Civic Religious Ritual. <i>Religion, Brain & Behavior. X(X):X-XX</i>.</a></p> 
                 
-                    <p class="gentext read-more-wrap"><b>Abstract:</b> Religious rituals are ubiquitous. Recent research indicates they can 
+                    <p class="gentext"><b>Abstract:</b> Religious rituals are ubiquitous. Recent research indicates they can 
                     powerfully affect social connection, increasing collective sentiments and behaviors. However, the extent 
                     to which these effects depend on religious commitment remains unclear. Here, we use longitudinal data to 
                     investigate this question in a natural ritual setting by comparing the responses of religiously committed 
-                    Hindus and non-Hindus immediately after a public Diwali celebration in New Zealand, and for two weeks following.<span class="read-more-target">
+                    Hindus and non-Hindus immediately after a public Diwali celebration in New Zealand, and for two weeks following.
                     Effects of time and level of religious commitment are assessed on five targets that measure reported social 
                     connection of participants to themselves and to specific groups: “Myself”, “My family and friends”, “Work 
                     colleagues/university peers”, “People who celebrate Diwali”, and “Humanity in general.” We find that 
@@ -65,30 +100,30 @@
                     social connection to Diwali celebrants between practicing and non-practicing Hindus. Though religious 
                     commitment leads to greater perceived social connection, this study additionally demonstrates that in a 
                     religiously diverse democracy, a civic religious ritual may foster greater democratic unions across religious 
-                    differences.</span></p>
-                    <label for="post-1" class="read-more-trigger"></label>
+                    differences.</p>
+                    
 
                     <br/>
                     <br/>
                    
-                <input type="checkbox" class="read-more-state" id="post-2"/>
+                
 
                 <p class="gentext hanging"><a href="https://www.medrxiv.org/content/10.1101/2020.09.15.20194829v2">Bulbulia, J. A., 
                     <span class="highlight"><b>Piven, S. D.</b></span>, Barlow, F. K., Don E. Davis, Greaves, L. M., Highland, B., … Sibley, C. G. (2020, 18 Sep). 
                     <i>National Longitudinal Mediators of Psychological Distress During Stringent COVID-19 Lockdown</i>. medRxiv. 2020.09.15.20194829</a></p> 
                 
-                    <p class="gentext read-more-wrap"><b>Abstract:</b> We leverage powerful time-series data from a national longitudinal sample 
+                    <p class="gentext"><b>Abstract:</b> We leverage powerful time-series data from a national longitudinal sample 
                     measured before the COVID-19 pandemic and during the world's eighth most stringent COVID-19 lockdown 
                     (New Zealand, March-April 2020, N = 940) and apply Bayesian multilevel mediation models to rigorously 
-                    test five theories of pandemic distress. <span class="read-more-target"> Findings: (1) during lockdown, rest diminished distress; without 
+                    test five theories of pandemic distress. Findings: (1) during lockdown, rest diminished distress; without 
                     rest psychological distress would have been about 1.74 times greater; (2) an elevated sense of community 
                     reduced distress, a little, but elevated government satisfaction was inert. Thus, the psychological benefits 
                     of lockdown extended to political discontents; (3) most lockdown distress arose from dissatisfaction from 
                     personal relationships. Social captivity, more than isolation, proved challenging; (4-5) Health and business 
                     satisfaction were stable; were they challenged substantially more distress would have ensued. Thus, lockdown 
                     benefited psychological health by affording safety, yet only because income remained secure. These national 
-                    longitudinal findings clarify the mental health effects of stringent infectious disease containment.</span></p>
-                    <label for="post-2" class="read-more-trigger"></label>
+                    longitudinal findings clarify the mental health effects of stringent infectious disease containment.</p>
+                    
                    
             </div>
     
@@ -109,7 +144,8 @@
             </div>
     
             <p class="footer-para"> 
-                Sofia D. Piven &copy; 2020 <br/> <span class ="highlight">Web design </span> by <span class ="highlight">Sofia D. Piven </span></p>
+                Sofia D. Piven &copy; 2020 <br/> <span class ="highlight">Web design </span> by <span class ="highlight">Sofia D. Piven </span>
+            <br/><br/><a href="index.html">Home</a> / <a href="#">Blog</a> / <a href="projects.html">Projects</a> / <a href="pubs.html">Publications</a></p>
             <ul>
                 <li><a href="https://twitter.com/sofiadpiven" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/sofiadpiven/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>

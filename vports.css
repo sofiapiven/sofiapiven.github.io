@@ -33,7 +33,7 @@
         margin-left: auto;
     }
     .botnav {
-        display: inline-block;
+        display: none;
     }
     .gennav {
         display: none;
@@ -55,7 +55,7 @@
         font-size: 17px;
     }
     .botnav {
-        display: inline-block;
+        display: none;
     }
     .gennav {
         display: none;
@@ -79,6 +79,9 @@
     .footer-bar {
         width: 45%;
     }
+    .botnav {
+        display: none;
+    }
     .gennav {
         display: none;
     }
@@ -92,6 +95,9 @@
         width: 300px
     }
     .gennav {
+        display: none;
+    }
+    .botnav {
         display: none;
     }
     #menuToggle {

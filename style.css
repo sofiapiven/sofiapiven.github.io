@@ -140,11 +140,10 @@ img {
     display: inline-block;
     padding: 10px;
     letter-spacing: 0.1em;
-    font-weight: bold;
 }
 
 .homenav ul a {
-    color: lightslategray;
+    color: rgb(32,32,32);
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
@@ -160,11 +159,10 @@ img {
     display: inline-block;
     padding: 10px;
     letter-spacing: 0.1em;
-    font-weight: bold;
 }
 
 .gennav ul a {
-    color: lightslategray;
+    color: rgb(32,32,32);
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
@@ -209,7 +207,15 @@ img {
     transition-delay: 0.03s;
 }
 
-/* hamburger */
+/* hamburber 2 (sticky) */
+
+
+
+
+
+
+
+/* hamburger 1 (not sticky) */
 
 
 #menuToggle
@@ -326,7 +332,7 @@ img {
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
-  padding-top: 50px;
+  padding-top: 54px;
   padding-right: 50px;
   text-align: right;
   
@@ -345,8 +351,9 @@ img {
 {
   padding-top: 15px;
   padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 15px;
-  font-size: 18px;
+  font-size:18px;
   display: inline-block;
 }
 
@@ -359,7 +366,7 @@ img {
 }
 
 
-
+/*end hamburrger 1 */
 
 
 /* bars */
@@ -386,6 +393,11 @@ img {
 .footer-para {
     font-size: 12px;
 }
+
+.footer-para a {
+    color: rgb(32,32,32);
+}
+
 
 footer ul {padding:0}
 footer ul li {
@@ -419,43 +431,8 @@ footer ul a {
     color: salmon;
 }
 
-/* read more buttons, citation, project styling*/
+/* citation, project styling*/
 
-.read-more-state {
-    display: none;
-}
-
-.read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: 0.25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-    content: "Show more";
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-    content: "Show less";
-}
-
-.read-more-trigger {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 0.5em;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: 0.25em;
-}
 
 .hanging {
     padding-left: 22px ;
