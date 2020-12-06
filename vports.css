@@ -3,6 +3,9 @@
     .botnav {
         display: none;
     }
+    #menuToggle {
+        display: none;
+    }
 }
 
 @media screen and (max-width:799px) {
@@ -10,6 +13,9 @@
         width: 100%;
     }
     .botnav {
+        display: none;
+    }
+    #menuToggle {
         display: none;
     }
 }
@@ -29,16 +35,18 @@
     .botnav {
         display: inline-block;
     }
+    .gennav {
+        display: none;
+    }
+    #menuToggle {
+        display: block;
+    }
 
 }
 
 @media screen and (max-width:415px) {
     .page-container {
         width: 100%;
-    }
-    .gennav ul {padding:0}
-    .gennav {
-        text-align: center;
     }
     header {
         width: 100%;
@@ -48,6 +56,12 @@
     }
     .botnav {
         display: inline-block;
+    }
+    .gennav {
+        display: none;
+    }
+    #menuToggle {
+        display: block;
     }
 
 }
@@ -65,10 +79,22 @@
     .footer-bar {
         width: 45%;
     }
+    .gennav {
+        display: none;
+    }
+    #menuToggle {
+        display: block;
+    }
 }
 
 @media screen and (max-width:300px) {
     .page-container {
         width: 300px
+    }
+    .gennav {
+        display: none;
+    }
+    #menuToggle {
+        display: block;
     }
 }
